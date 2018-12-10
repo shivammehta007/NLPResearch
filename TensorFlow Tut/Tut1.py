@@ -12,3 +12,6 @@ h = tf.nn.relu(tf.matmul(x, w) + b)
 sess = tf.Session()
 sess.run(tf.initialize_all_variables())
 sess.run(h, {x : np.random.random(100, 784)})
+
+# ------------  Till Initializing a session ---------------- #
+
