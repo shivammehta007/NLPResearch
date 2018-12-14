@@ -36,3 +36,4 @@ print("\nExample sentence: '%s'" % sentences[0])
 print("\nExample sentence after Pre-processing: '%s'" % tokenized_sentences[0])
 
 X_train = np.asarray([[word_to_index[w] for w in sent[:-1]] for sent in tokenized_sentences])
+Y_train = np.asarray([[word_to_index[w] for w in sent[1:]] for sent in tokenized_sentences])
